@@ -1,4 +1,6 @@
-package com.jing.retrofit;
+package com.jing.retrofit.services;
+
+import com.jing.retrofit.model.Contributor;
 
 import java.util.List;
 

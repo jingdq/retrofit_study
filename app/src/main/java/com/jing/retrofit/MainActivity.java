@@ -3,6 +3,10 @@ package com.jing.retrofit;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.jing.retrofit.model.Contributor;
+import com.jing.retrofit.services.GithubClient;
+import com.jing.retrofit.services.LoginService;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -31,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
+        LoginService loginService = ServiceGenerator.createService(LoginService.class,"jing","jing");
+        loginService.basicLogin();
+
+
+
 
 
     }
